@@ -1,0 +1,146 @@
+:root{
+    --color1:#AC2C46;
+    --color2:rgb(138, 230, 210);
+    --color3:#FFC4B8;
+    --fondo:#f2f2f2;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poiret One', cursive;
+    background: var(--fondo);
+    display: flex;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    height: 700px;
+    background: url(RECURSOS/hojas-oscuras.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.nav1{
+  background: transparent;
+  height: 80px;
+  color: #fff;
+}
+.nav2{
+  background: var(--fondo);
+  height: 100px;
+  color: black;
+}
+.contenedor-nav{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  height: inherit;
+  overflow: hidden;
+  }
+
+nav .enlaces a{
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 17px;
+  font-size: 25px;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: inherit;
+}
+nav a:hover{
+  border-bottom: 3px solid var(--color2);
+  transition: 0,6s;
+}
+.logo, .logo img{ 
+    height: 80px;
+}
+.marca-logo{
+  margin: auto;
+  padding: var(--margenes)0;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size:x-large;
+  position: relative;
+  top: 150px;
+}
+.logo2{
+    height: 250px;
+}
+.icono{
+  display: none;
+  font-size: 24px;
+  padding: 23,5px 20px;
+}
+/*CONTACTO*/
+
+.contacto{
+  text-decoration: none;
+  position: relative;
+  flex-wrap: wrap;
+  position: relative;
+  top: 150px;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+  .send{
+    position: relative;
+    top: 15px;
+    right: -10px;
+    height: 50px;
+  }
+  .send:hover{
+    transform: translate3d(10px, -20px, 0px);
+    transition: 1s;
+  }
+  .div-send a{
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size:x-large;
+    text-decoration: none;
+}
+.div-send a:hover{
+  color: var(--color2);
+  text-decoration: none;
+}
+  .dial{
+    position: relative;
+    top: 15px;
+    right: -10px;
+   height: 50px;
+  }
+  .dial:hover{
+    transform: rotate(180deg);
+    transition: 1s;
+  }
+  .div-dial a{
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size:x-large;
+    text-decoration: none;
+}
+.div-dial a:hover{
+  color: var(--color2);
+  text-decoration: none;
+}
+
+

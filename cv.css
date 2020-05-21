@@ -1,0 +1,442 @@
+:root{
+    --color1:#AC2C46;
+    --color2:rgb(138, 230, 210);
+    --color3:#FFC4B8;
+    --fondo:#f2f2f2;
+    --titulos:33px;
+    --margenes:60px;
+    --espacios:10px;
+    --espacios-contenido:45px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poiret One', cursive;
+    background: var(--fondo);
+}
+img{
+    vertical-align: top;
+}
+
+/*PRELOADER*/
+.lds-default {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-default div {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #dfc;
+    border-radius: 50%;
+    animation: lds-default 1.2s linear infinite;
+  }
+  .lds-default div:nth-child(1) {
+    animation-delay: 0s;
+    top: 37px;
+    left: 66px;
+  }
+  .lds-default div:nth-child(2) {
+    animation-delay: -0.1s;
+    top: 22px;
+    left: 62px;
+  }
+  .lds-default div:nth-child(3) {
+    animation-delay: -0.2s;
+    top: 11px;
+    left: 52px;
+  }
+  .lds-default div:nth-child(4) {
+    animation-delay: -0.3s;
+    top: 7px;
+    left: 37px;
+  }
+  .lds-default div:nth-child(5) {
+    animation-delay: -0.4s;
+    top: 11px;
+    left: 22px;
+  }
+  .lds-default div:nth-child(6) {
+    animation-delay: -0.5s;
+    top: 22px;
+    left: 11px;
+  }
+  .lds-default div:nth-child(7) {
+    animation-delay: -0.6s;
+    top: 37px;
+    left: 7px;
+  }
+  .lds-default div:nth-child(8) {
+    animation-delay: -0.7s;
+    top: 52px;
+    left: 11px;
+  }
+  .lds-default div:nth-child(9) {
+    animation-delay: -0.8s;
+    top: 62px;
+    left: 22px;
+  }
+  .lds-default div:nth-child(10) {
+    animation-delay: -0.9s;
+    top: 66px;
+    left: 37px;
+  }
+  .lds-default div:nth-child(11) {
+    animation-delay: -1s;
+    top: 62px;
+    left: 52px;
+  }
+  .lds-default div:nth-child(12) {
+    animation-delay: -1.1s;
+    top: 52px;
+    left: 62px;
+  }
+  @keyframes lds-default {
+    0%, 20%, 80%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+  }
+  /* HEADER*/
+
+  header{
+      width: 100%;
+      height: 600px;
+      background: url(RECURSOS/50-Beautiful-and-Minimalist-Presentation-Backgrounds-04.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+  }
+
+  nav{
+      width: 100%;
+      position: fixed;
+      box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+  }
+.nav1{
+    background: transparent;
+    height: 80px;
+    color: #fff;
+}
+.nav2{
+    background: var(--fondo);
+    height: 100px;
+    color: black;
+}
+.contenedor-nav{
+display: flex;
+margin: auto;
+width: 100%;
+justify-content: space-between;
+align-items: center;
+max-width: 1000px;
+height: inherit;
+overflow: hidden;
+}
+
+nav .enlaces a{
+    display: inline-block;
+    padding: 5px 0;
+    margin-right: 17px;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+}
+nav a:hover{
+    border-bottom: 3px solid var(--color2);
+    transition: 0,6s;
+}
+
+.logo, .logo img{ height: 80px;}
+.icono{
+    display: none;
+    font-size: 24px;
+    padding: 23,5px 20px;
+}
+.textos{
+    width: 100%;
+    height: 100%;
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:#f2f2f2;
+    overflow: hidden;  
+    text-align: center;
+  }
+.textos h1{
+  font-size: 60px;
+}
+.textos>h2{
+  font-size: 30px;
+  font-weight: 300;
+}
+/* MAIN */
+
+.contenedor{
+  margin: auto;
+  padding: var(--margenes)0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenedor h3{
+  font-size: var(--titulos);
+  color: var(--color1);
+  margin-bottom: var(--espacios);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+.contenedor h4{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color1);
+  font-family: 'Raleway', sans-serif;
+}
+
+.contenedor p{
+font-size: var(--subtitulos);
+font-weight: 300;
+color: var(--color1);
+margin-bottom: 60px;
+font-family: 'Raleway', sans-serif;
+}
+
+.after::after{
+  content:'' ;
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 100px;
+  height: 2px;
+  background: var(--color1);
+  margin-bottom: var(--espacios-contenido);
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.content-card{
+  width: 98%;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0,.5);
+  margin: 10px;
+}
+.content-card img{
+object-fit: cover;
+float: left;
+margin: 10px;
+width: 400px;
+}
+aside{
+padding: 20px;
+}
+aside h4{
+  text-align: center;
+  margin-bottom: 15px;
+}
+aside p{
+ line-height: 25px;
+}
+.about{
+  background: linear-gradient(to bottom,
+  rgba(52,144,144,.6),
+  rgba(28, 156, 156, 0.6),
+  rgba(39, 163, 164, 0.6)
+   ), url(RECURSOS/rock8.jpg);
+  height: auto;
+}
+.about h3{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: var(--titulos);
+  color: white;
+  margin-top: -50px;
+}
+.about p{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.empresas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  flex-wrap: wrap;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+.about .empresas{
+  width: 400px;
+  margin-top: 50px;
+}
+.caja-empresas>h4{
+  text-align: center;
+  margin-bottom: var(--espacios);
+  font-weight: lighter;
+  margin-bottom: 25px;
+}
+.caja-empresas p{
+  text-align: center;
+}
+.caja-empresas img{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.about .nuevaweb{
+  width: 200px;
+  margin-bottom: 90px;
+  position: relative;
+  top: 30px;
+}
+.about .bravo{
+  width: 100px;
+  margin-bottom: 50px;
+}
+.empresas img:hover{
+  transform: scale(1.2);
+ transition-duration: .8s;
+}
+.freelance{
+  margin-top: 100px;
+  color: var(--color1);
+}
+.anos{
+justify-content: space-around;
+}
+a.ano{
+  background-color:rgba(39, 163, 164, 0.6);
+  color: white;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+  padding: 10px;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: solid var(--color1) 4px;
+  border-right: solid var(--color1) 2px;
+  transition: all 0.1s ease-out;
+}
+.anos :hover{
+  background-color: #AC2C46;
+  border-bottom: solid rgb(52,144,144) 4px;
+  border-right: solid rgb(52,144,144) 2px;
+}
+.freelance p{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  color: var(--color1);
+  margin-bottom: 20px;
+}
+.galeria-ficcion{
+  display: inline-block;
+  flex-wrap: wrap;
+}
+.galeria-ficcion img{
+  margin: 5px;
+  width: 25%;
+}
+.galeria-ficcion img:hover{
+ transform: scale(.8);
+ transition-duration: .8s;
+}
+.footer{
+  background:linear-gradient(to bottom,
+  rgba(26, 75, 75, 0.6),
+  rgba(28, 156, 156, .5),
+  rgba(39, 163, 164, .6)
+  ), url(RECURSOS/ocean-waves-1646311.jpg);
+  height: 550px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+.marca-logo img{
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: auto;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+}
+.telefonomail p{
+  position: relative;
+  top: 60px;
+  font-size:x-large;
+}
+.send{
+  position: relative;
+  top: 120px;
+  right: -70px;
+  width: 50px;
+}
+.send:hover{
+  transform: translate3d(10px, -20px, 0px);
+  transition: 1s;
+}
+.send:active{
+  transform: translate3d(10px, -20px, 0px);
+  transition: 1s;
+}
+.dial{
+  position: relative;
+  top: 120px;
+  right: 70px;
+  width: 50px;
+}
+.dial:hover{
+  transform: rotate(180deg);
+  transition: 1s;
+}
+.dial:active{
+  transform: rotate(180deg);
+  transition: 1s;
+}
+.license{
+  position: relative;
+  bottom: -200px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+.license a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+.license-photo{
+  position: relative;
+  bottom: -150px;
+  color:white;
+  text-decoration:none;
+}
+.license-photo a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
